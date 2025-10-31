@@ -1,5 +1,7 @@
 // @ts-ignore
 import Header from './components/Header';
+// @ts-ignore: allow importing JS module without types
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
           <p className="text-xl text-gray-600">Сервіс оренди самокатів</p>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
