@@ -2,6 +2,7 @@
 import Header from './components/Header';
 // @ts-ignore: allow importing JS module without types
 import Footer from './components/Footer';
+import FAQ from './components/FAQ';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <p className="text-xl text-gray-600">Сервіс оренди самокатів</p>
         </div>
       </div>
+
+      <FAQ />
 
       <Footer />
     </div>
