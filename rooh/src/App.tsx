@@ -2,21 +2,19 @@
 import Header from './components/Header';
 // @ts-ignore: allow importing JS module without types
 import Footer from './components/Footer';
+// @ts-ignore: allow importing JS module without types
 import FAQ from './components/FAQ';
+// @ts-ignore: allow importing JS module without types
+import Gallery from './components/Gallery';
+// @ts-ignore: allow importing JS module without types
+import Hero from './components/Hero';
 
 function App() {
   return (
     <div className="min-h-screen">
       <Header />
-
-      {/* Тимчасовий контент для перевірки */}
-      <div className="pt-20 min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-6xl font-bold text-primary mb-4">RЭН</h1>
-          <p className="text-xl text-gray-600">Сервіс оренди самокатів</p>
-        </div>
-      </div>
-
+      <Hero />
+      <Gallery />
       <FAQ />
 
       <Footer />
