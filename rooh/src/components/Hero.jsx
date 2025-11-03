@@ -9,8 +9,8 @@ const Hero = () => {
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 {/* Перша діагональна лінія */}
                 <motion.div
-                    initial={{ x: '-100%', opacity: 0 }}
-                    animate={{ x: '0%', opacity: 0.15 }}
+                    initial={{ x: '-100%', opacity: 0.15 }}
+                    animate={{ x: '0%', opacity: 0.35 }}
                     transition={{ duration: 2, ease: "easeOut" }}
                     className="absolute top-0 right-0 w-[800px] h-[800px] -translate-y-1/2 translate-x-1/4"
                 >
@@ -19,8 +19,8 @@ const Hero = () => {
 
                 {/* Друга діагональна лінія */}
                 <motion.div
-                    initial={{ x: '100%', opacity: 0 }}
-                    animate={{ x: '0%', opacity: 0.1 }}
+                    initial={{ x: '100%', opacity: 0.15 }}
+                    animate={{ x: '0%', opacity: 0.35 }}
                     transition={{ duration: 2, delay: 0.3, ease: "easeOut" }}
                     className="absolute top-1/3 right-0 w-[600px] h-[600px] translate-x-1/3"
                 >
@@ -29,8 +29,8 @@ const Hero = () => {
 
                 {/* Третя тонша лінія */}
                 <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 0.08 }}
+                    initial={{ opacity: 0.15 }}
+                    animate={{ opacity: 0.35 }}
                     transition={{ duration: 2, delay: 0.6 }}
                     className="absolute bottom-0 right-0 w-[400px] h-[400px] translate-x-1/4 translate-y-1/4"
                 >
