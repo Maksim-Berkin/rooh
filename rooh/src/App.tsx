@@ -12,6 +12,8 @@ import Hero from './components/Hero';
 import Advantages from './components/Advantages';
 // @ts-ignore: allow importing JS module without types
 import HowItWorks from './components/HowItWork';
+// @ts-ignore: allow importing JS module without types
+import Pricing from './components/Pricing';
 
 function App() {
   return (
@@ -20,9 +22,9 @@ function App() {
       <Hero />
       <Advantages />
       <HowItWorks />
+      <Pricing />
       <Gallery />
       <FAQ />
-
       <Footer />
     </div>
   );
