@@ -10,6 +10,8 @@ import Gallery from './components/Gallery';
 import Hero from './components/Hero';
 // @ts-ignore: allow importing JS module without types
 import Advantages from './components/Advantages';
+// @ts-ignore: allow importing JS module without types
+import HowItWorks from './components/HowItWork';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
       <Header />
       <Hero />
       <Advantages />
+      <HowItWorks />
       <Gallery />
       <FAQ />
 

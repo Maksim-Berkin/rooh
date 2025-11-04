@@ -134,7 +134,7 @@ const Hero = () => {
                                         {/* Екран телефону */}
                                         <div className="aspect-[9/19] bg-gradient-to-br from-gray-100 to-gray-50 flex items-center justify-center">
                                             <div className="text-center p-4">
-                                                <div className="text-primary font-bold text-3xl mb-2">RЭН</div>
+                                                <div className="text-primary font-bold text-3xl mb-2">ROOH</div>
                                                 <div className="text-gray-600 text-sm mb-4">Карта самокатів</div>
                                                 <div className="mt-4 text-7xl">🗺️</div>
                                                 <div className="mt-4 text-xs text-gray-400">Завантажте додаток</div>
