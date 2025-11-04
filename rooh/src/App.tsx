@@ -8,12 +8,15 @@ import FAQ from './components/FAQ';
 import Gallery from './components/Gallery';
 // @ts-ignore: allow importing JS module without types
 import Hero from './components/Hero';
+// @ts-ignore: allow importing JS module without types
+import Advantages from './components/Advantages';
 
 function App() {
   return (
     <div className="min-h-screen">
       <Header />
       <Hero />
+      <Advantages />
       <Gallery />
       <FAQ />
 
