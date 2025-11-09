@@ -1,17 +1,18 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const menuItems = [
-        { title: 'Головна', href: '#home' },
-        { title: 'Про нас', href: '#about' },
-        { title: 'Як працює', href: '#how-it-works' },
-        { title: 'Тарифи', href: '#pricing' },
-        { title: 'FAQ', href: '#faq' },
-        { title: 'Контакти', href: '#contacts' },
+        { title: 'Головна', href: '/#home', type: 'anchor' },
+        { title: 'Загальні правила', href: '/terms', type: 'route' },
+        { title: 'Як працює', href: '/#how-it-works', type: 'anchor' },
+        { title: 'Тарифи', href: '/#pricing', type: 'anchor' },
+        { title: 'FAQ', href: '/#faq', type: 'anchor' },
+        { title: 'Контакти', href: '/#contacts', type: 'anchor' },
     ];
 
     return (
@@ -19,18 +20,19 @@ const Header = () => {
             <nav className="container mx-auto px-4 py-4">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        className="flex items-center"
-                    >
-                        <img
-                            src="/src/assets/images/logo.png"
-                            alt="Logo"
-                            className="h-12 w-12 mr-2"
-                        />
-                    </motion.div>
-
+                    <Link to="/">
+                        <motion.div
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            className="flex items-center"
+                        >
+                            <img
+                                src="/src/assets/images/logo.png"
+                                alt="Logo"
+                                className="h-12 w-12 mr-2"
+                            />
+                        </motion.div>
+                    </Link>
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center space-x-8">
                         {menuItems.map((item, index) => (

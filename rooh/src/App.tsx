@@ -1,3 +1,4 @@
+import { Routes, Route } from 'react-router-dom';
 // @ts-ignore
 import Header from './components/Header';
 // @ts-ignore: allow importing JS module without types
@@ -14,18 +15,29 @@ import Advantages from './components/Advantages';
 import HowItWorks from './components/HowItWork';
 // @ts-ignore: allow importing JS module without types
 import Pricing from './components/Pricing';
+// @ts-ignore: allow importing JS module without types
+import Terms from './components/Terms';
+
+// Головна сторінка
+function HomePage() {
+  return (
+    <>
+      <Hero />
+      <Advantages />
+      <HowItWorks />
+      <Pricing />
+    </>
+  );
+}
 
 function App() {
   return (
     <div className="min-h-screen">
       <Header />
-      <Hero />
-      <Advantages />
-      <HowItWorks />
-      <Pricing />
-      <Gallery />
-      <FAQ />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/terms" element={<Terms />} />
+      </Routes>
     </div>
   );
 }
